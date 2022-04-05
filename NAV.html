@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+    padding: 10px;
+    /* position: relative; */
+    position: sticky;
+    top: 0;
+    background-color: #2f0521;  
+    z-index: 50;
+}
+
+    .navtotal{
+        display: flex; 
+        margin-right: 10%;
+        margin-left: 10%;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+        .navtotal> .nav-logo{
+            width: 100px;
+        }
+        .navtotal> .nav-span{  
+
+            margin-right: 15px;
+            margin-left: 15px;
+
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+            .navtotal>.nav-span> a{
+                text-decoration: none;
+                color: #f8a850;
+            }
+        .navicon-ig{
+            position: absolute;
+            right: 15%;
+            bottom: 50%;
+        }
+         .navicon-ig>img{
+            width: 50%;
+            align-content: center;
+         }
+        .navicon-tweet{
+            position: absolute;
+            right: 12%;
+            bottom: 50%;
+        }
+            .navicon-tweet>img{
+                width: 50%;
+                align-content: center;
+            }
+        .navicon-facebook{
+            position: absolute;
+            right: 9%;
+            bottom: 50%;
+        }
+            .navicon-facebook>img{
+                width: 50%;
+                align-content: center;
+            }
+        .navicon-member{
+            position: absolute;
+            right: 6%;
+            bottom: 50%;
+        }
+            .navicon-member>img{
+                width: 50%;
+                align-content: center;
+            }
+    </style>
+</head>
+<body>
+    
+
+
+<div class="nav">
+    <div class="navtotal">
+        <div class="nav-span"><a href="link.html">Join us</a></div>
+        <div class="nav-span"><a href="link.html">explore</a></div>
+        <div class="nav-logo">
+            <img src="pic/logo.png" alt="logo" width="100">
+        </div>
+        <div class="nav-span"><a href="link.html">review</a></div>
+        <div class="nav-span"><a href="link.html">Contact</a></div>
+    </div>
+    <div class="navicon-ig"><img src="pic/IGicon.png" alt="instagram" width="50"></div>
+    <div class="navicon-tweet"><img src="pic/TWEETicon.png" alt="tweeter" width="50"></div>
+    <div class="navicon-facebook"><img src="pic/facebookicon.png" alt="facebook" width="50"></div>
+    <div class="navicon-member"><img src="pic/membericon.png" alt="member" width="50"></div>
+</div>
+
+
+</body>
+</html>

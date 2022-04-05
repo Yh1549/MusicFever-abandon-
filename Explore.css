@@ -1,0 +1,136 @@
+
+body{
+    background-color: #2f0521;
+}
+h2{
+    color: #f8a850;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+h3{
+    color: #f8a850;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+     
+}
+span{
+    color: wheat;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    align-self:flex-end;
+    
+}   
+    .artist{
+        color: wheat;
+        font-size: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        margin-bottom: 80px;
+        display: inline-block;
+        /* border-bottom: #bca6a9 solid 1px; */
+        /* border-top: #bca6a9 solid 1px; */
+        transition: .3s;       
+    } 
+    .artist:hover{
+        font-size: 150px;
+        text-shadow: rgb(235, 198, 243) 0px 0px 10px;
+    }
+ 
+p{
+    color: wheat;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 20px;
+     
+}
+li{
+    list-style: none;
+}
+.explore-rec{
+    display:flex
+}
+    .explore-recomend-pic{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        padding-right: 20px;
+    }
+    .explore-pic{
+        transition: 1s;
+    }
+    .explore-pic:hover{
+        scale: 1.5;
+    }
+    .explore-recomend-name{
+        background-image: url(pic/explorebg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        box-sizing: border-box;
+        width: 55%;
+        border-left: #f8a850 20px solid;
+        position: relative;
+        padding-left: 20px;
+    }
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+}
+.menu-deco{
+    width: 20%;
+    border-left:#f8a850 15px solid;
+    margin-top: 80px;   
+}
+.top-menu{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-menu-title>span{
+    font-size: 20px;
+}
+    .menu-container{
+        align-content: center;
+        border-bottom: #bca6a9 solid 1px;
+    } 
+    .menu-container>ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+        align-content: center;
+    } 
+    .menu-container>ul>span{
+       color: #f8a850;
+     align-self: center
+    } 
+    .menu-container>ul>li{
+       margin-right: 20px;
+       margin-left: 20px;
+       }
+.menu-item{
+    display: flex;
+    flex-direction: column;
+}
+.menu-item>span{
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 700; 
+}
+    .h3-sticky{
+          display: flex;
+          flex-direction: column;
+          right: 0;
+          position: sticky;
+          top: 107px;
+      }

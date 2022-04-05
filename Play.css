@@ -1,0 +1,155 @@
+
+body{
+    background-color: #2f0521;
+}
+span{
+    color: wheat;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+h2{
+    color: wheat;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+p{
+    color: wheat;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+li{
+    list-style: none;
+}
+.music{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    position: relative;
+    
+}
+.musicbanner{
+    width: 100%;
+    padding-bottom: 30%;
+    background-image: url(pic/album00.jpg);
+    filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    position: relative;
+    
+}
+
+.music>h2 {
+    display: inline-block;
+    background-color: #323131;
+    padding: 10px;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.music>span {
+    font-size: 30px;
+    display: inline-block;
+    background-color: #323131;
+    padding: 10px;
+    margin: 20px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+.musictotal{
+    display: flex;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.music-container{
+    width: 80%;
+}
+.addplay{
+    width: 20%;
+    border-left: #f8a850 solid 1px;
+    margin-left: 10px;
+    padding-left: 50px;
+}
+.addplay-item{
+    display: flex;
+    padding: 10px;
+}
+.addplay-item>span{
+    font-size: 20px;
+}
+.addplay>h3{
+    color: wheat;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-bottom: #f8a850 1px solid;
+}
+.musiccontent{
+    display: flex;
+}
+.playbar{
+    margin-top: 20px;
+    border-bottom: #bca6a9 solid 5px;
+}
+.play{
+    padding: 20px;
+}
+.info{
+    margin-top: 25px;
+}
+.info>span{
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.playlist>h2{
+    text-align: center;
+}
+.playmenu{
+    /* width: 60%; */
+    margin-left: auto; 
+    margin-right: auto;
+}
+.play-menu-title>span{
+    font-size: 20px;
+}
+    .menu-container{
+        align-content: center;
+        border-bottom: #bca6a9 solid 1px;
+    } 
+    .menu-container>ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+        align-content: center;
+    } 
+    .menu-container>ul>span{
+       color: #f8a850;
+     align-self: center
+    } 
+    .menu-container>ul>li{
+       margin-right: 20px;
+       margin-left: 20px;
+       }
+.menu-item{
+    display: flex;
+    flex-direction: column;
+}
+.menu-item>span{
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 700; 
+}
+ul>span{
+    font-size: 25px;
+}

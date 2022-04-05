@@ -1,0 +1,226 @@
+
+
+body{
+    background-color: #2f0521;
+
+}
+h2{
+    color: wheat;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+h3{
+    color: wheat;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+p{
+    color: wheat;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+span{
+    color: wheat;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    margin-left: 10%;
+}
+.intro-word{
+    align-self: center;   
+}
+.intro-word>.button{
+    margin-top: 40px;
+}
+.intro-word>.button>a{
+    /* justify-content: center; */
+    background-color: #f8a850;
+    color: #2f0521;
+    padding: 10px;
+    border-radius: 6px;
+    border:0;
+    transition: .5s;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    
+}
+.intro-word>.button>a:hover{
+    background-color: #f8bb7a;
+    color: #52173e;
+}
+.intro-pic{
+    position: relative;
+    display: flex;    
+}
+.intro-pic-front{
+    position: relative;     
+    right: -15%;
+}
+.intro-pic-front>img{   
+object-fit:cover;
+}
+.intro-pic-back{
+    align-self: center;   
+}
+.intro-pic-back>img{
+    width: 75%;   
+}
+
+.plans{
+   margin-top: 10%;
+   margin-bottom: 10%;    
+   background-image: url(pic/sun.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.plans-title{
+    text-align: center;
+}
+.plans-title>h2{
+    font-size: 100px;
+    font-weight: 700;
+}
+.plans-title>span{
+    font-size: 30px;
+    font-weight: 700;   
+}
+.plans-container{
+    display: flex;
+    justify-content: space-between;
+
+    height: 80%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.plans-container>a{
+    text-decoration: none;
+}
+.plans-item{
+    color: #2f0521;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    transition: all 3s linear ;
+    background: linear-gradient(180.01deg, #FCCB92 -21.48%, #CD5443 63.39%, #E67E05 99.99%);
+    border-radius: 25px;
+    padding: 30px;   
+}  
+.plans-item>h3{
+    color: #2f0521;
+}
+.firstplan{
+    background: linear-gradient(180.01deg, #E86EFC -21.48%, #116183 63.39%, #071935 99.99%);
+}
+.plans-item>ul>li{
+    list-style-type: square;
+    font-size: 20px;
+    text-align: start;
+    line-height: 300%;
+    
+}
+.plans-item>span{
+    font-size: 25px;
+}
+.plans-item:hover{
+    background: linear-gradient(180.01deg, #f5bf82 21.48%, #CD5443 63.39%, #E67E05 99.99%);
+}
+.firstplan:hover{
+    background: linear-gradient(180.01deg, #edacf7 -21.48%, #116183 63.39%, #071935 99.99%);
+}
+.artist-title>h2{
+    font-size: 100px;
+    text-align: center;
+}
+.artist-content{
+    display: flex;
+    position: relative;
+}
+    .artist-bg{
+        width: 50%;
+        position: relative;
+    }
+        .artist-word-bg{
+            width: 100%;
+            clip-path: polygon(0% 0%,50% 25%,0% 80%);
+            background-color: #3d075c;
+            padding-bottom: 75%;
+        }
+    .artist-pic{
+        width: 50%;
+        display: flex;
+        padding: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        position: relative;
+    }
+        .artist-pic .imgpoly{            
+            clip-path: polygon(0% 0%,100% 0%,0% 100%);
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            width: 60%;
+        }
+        .artist-pic .imgsecond{            
+            width: 50%;
+        }  
+    .artist-word{ 
+        text-align: left;
+        position: absolute;
+        top: 10%;
+        margin-right: 10%;
+        margin-left: 10%;   
+    }
+    .artist-bg>ul{ 
+       display: flex; 
+       justify-content: center;
+    }
+    .artist-bg>ul>span{ 
+       margin: auto;
+     }
+    .artist-bg>ul>li{ 
+        list-style: none; 
+        /* width: 50%; */
+        padding: 10px;
+    }
+    .artist-bg>ul>li>img{   
+        border-radius: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+.question{
+    padding: 100px;
+}
+    .question-title>h2{
+        font-size: 100px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .question-content{
+        display: flex;
+    }
+    .question-item{
+        padding: 20px;
+    }
+    .question-item p{
+        line-height: 40px;
+    }
