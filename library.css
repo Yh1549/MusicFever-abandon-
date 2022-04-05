@@ -3,12 +3,12 @@ body{
     top: 107px;
     
 }
-ul{
+.playlist-item>ul{
     display: flex;
     list-style: none;
 }
 
-li{
+.playlist-item>ul>li{
     padding: 40px 20px;
     position: relative;
 }
@@ -40,14 +40,14 @@ span{
 .bannerperson>span{
     background-color: #323131;
     color: #f8a850;
-    font-size: 60px;
+    font-size: 50px;
     position: absolute; 
     left: 20%; 
-    top: -2000%; 
+    top: -1000%; 
 }
 .playlist{
     display: flex;
-    max-width: 1500px;
+    max-width: 1200px;
     justify-content: space-around;
     margin-right: auto;
     margin-left: auto;
@@ -59,18 +59,18 @@ span{
     border-bottom: wheat solid 1px;
     padding-top: 10px;
 }
-ul>li{
+.playlist-item>ul>li{
     align-self: center;
 }
-ul>li>span{
+.playlist-item>ul>li>span{
     color: #f8a850;
 }
 .playlist-container{
-    padding: 20px;
+    padding: 10px;
 }
 .playlist-menu{
     border-left: #f8a850 solid 5px;
-    width: 25%;
+    width: 20%;
 }
 .menuspan{
     display: flex;
