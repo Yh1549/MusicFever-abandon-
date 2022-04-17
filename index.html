@@ -5,224 +5,212 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Fever Home</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="navfooter.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/All.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/rwdmenu.js"></script>
 </head>
-<body>
-    
-    <div class="nav">
-        <div class="navtotal">
-            <div class="nav-span"><a href="Streaming.html">Join us</a></div>
-            <div class="nav-span"><a href="Explore.html">explore</a></div>
-            <div class="nav-logo">
-                <a href="index.html"><img src="pic/logo.png" alt="logo" width="100"></a>
-            </div>
-            <div class="nav-span"><a href="review.html">review</a></div>
-            <div class="nav-span"><a href="library.html">Library</a></div>
+<body > 
+    <div class="navbar">
+        <div class="logo">
+            <img src="pic/logo.png" alt="">
         </div>
-        <div class="navicon-ig"><img src="pic/IGicon.png" alt="instagram" width="50"></div>
-        <div class="navicon-tweet"><img src="pic/TWEETicon.png" alt="tweeter" width="50"></div>
-        <div class="navicon-facebook"><img src="pic/facebookicon.png" alt="facebook" width="50"></div>
-        <div class="navicon-member"><img src="pic/membericon.png" alt="member" width="50"></div>
+        <div class="hb" id="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-    <div class="joinus-bg"> 
-        <img src="pic/city1.png" alt="City" width="100%" >
-            <div class="joinus">
-                <div class="joinus-word">
-                    <h1>Join now<br>For
-                    <br> 
-                    Best music</h1>
-                    <p>best music with best quality</p>
-                </div>
-
-                <div class="joinus-button">
-                    <a href="Streaming.html"> Start Free Trial</a>
-                </div>
-            </div>
-    </div>
-    <div class="explore-title">
-        <div class="explore-title-left">
-            <h2>Explore<br>
+    <nav class="navlist" id="navlist" value="close">
+        <ul>
+            <li>Join us</li>
+            <li>Explore</li>
+            <li>Review</li>
+            <li>Library</li> 
+            <li>Log in</li> 
+        </ul>
+    </nav>         
+    <div class="container" > 
+        <div class="containerbg">
+            <img class="img1" src="pic/city1.png" alt="City" >
+            <img class="img2" src="pic/citybg_rwd768.png" alt="City" >
+        </div>               
+        <div class="container-word">                      
+            <h1>FIND YOUR<br>
+                MUSIC</h1>
+            <p>A streaming service for all music fans</p>                       
+            <a href="Streaming.html"><div>Start Free Trial</div></a>
+        </div>                
+    </div>            
+    <div class="section-title">
+            <h1>Explore<br>
             Your<br>
-            Favorite</h2>
-        </div>
-        <div class="explore-title-right">
-            <p>build yourself a <br>
+            Favorite</h1>            
+        <div class="section-title-word">
+            <span>build yourself a <br>
             personal music list <br> 
             share it <br>
-            and explore it.</p>
+            and explore it.</span>
         </div>
     </div>
-    <div class="explore-content">
-        <div class="explore-content-left">
-            <div class="explore-container ">
-                <a href="Explore.html"><div class="explore-items fir">
-                    <img src="pic/singer12.jpg">
-                    <h3>HIP POP</h3>
-                    <p>Hip Hop music also referred to
-                        as hip hop or rap
-                        music is a genre of musicHip Hop music also referred to
-                        as hip hop or rap</p>                    
-                </div></a>
+    <section class="explore-content">
+        <div class="explore-container ">                    
+            <div class="explore-items">                
+                <img src="pic/singer12.jpg">
+                <a href="Explore.html">
+                <h2>HIP POP</h2>
+                <p>Hip Hop music also referred to
+                    as hip hop or rap
+                    music is a genre of musicHip Hop music also referred to
+                    as hip hop or rap</p>                    
+                </a>
             </div>
-            <div class="explore-container ">
-               <a href="Explore.html">
-                   <div class="explore-items fir">                  
-                    <img src="pic/singer11.jpg"> 
+        </div>
+        <div class="explore-container ">                  
+            <div class="explore-items">                
+                <img src="pic/singer11.jpg"> 
+                <a href="Explore.html"> <h2>山下達郎</h2>
+                <p>is a Japanese 
+                    singer-songwriter and record
+                    producer often referred to 
+                    as the "King of City Pop"</p></a>
+            </div>
+        </div>
+        <div class="explore-container ">
+                <div class="explore-items">
+                <img src="pic/singer15.jpg">
+                <a href="Explore.html"> <h2>SynthWave</h2>
+                <p>Synthwave is an electronic 
+                    music microgenre that is based
+                    predominantly on the music 
+                    associated with action</p></a>
+            </div>
+        </div>
+        <div class="explore-container ">
+                <div class="explore-items">
+                <img src="pic/singer14.jpg">
+                <a href="Explore.html"><h2>Tatsuro</h2>
+                <p>for pioneering that style of 
+                    Japanese adult-oriented 
+                    rock/soft rock music</p></a>
+            </div>
+        </div> 
+    </section> 
+
+    <div class="section-title">
+        <h1>Music<br> Artist</h1>   
+        <div class="section-title-word">
+            <span>build yourself a <br>
+            personal music list <br> 
+            share it <br>
+            and explore it.</span>
+        </div> 
+    </div>
+    <div class="artist-content">
+        <div class="artist-item"> 
+                <!-- <div class="artist-word-bg"></div> -->     
+                <div class="artist-pic">
+                      <img src="pic/singer7.jpg" alt="">
+                      <img id="polypic" src="pic/singer8.jpg" alt="">
+                      <img id="polypic-2" src="pic/singer8.jpg" alt="">
+                </div>
+                <div class="artist-word">
                     <h3>山下達郎</h3>
-                    <p>is a Japanese 
-                        singer-songwriter and record
-                        producer often referred to 
-                        as the "King of City Pop"</p>
-                </div></a>
-            </div>
-            <div class="explore-container ">
-                <a href="Explore.html">
-                    <div class="explore-items fir">
-                    <img src="pic/singer15.jpg">
-                    <h3>SynthWave</h3>
-                    <p>Synthwave is an electronic 
-                        music microgenre that is based
-                        predominantly on the music 
-                        associated with action</p>
-                </div></a>
-            </div>
-            <div class="explore-container ">
-                <a href="Explore.html">
-                    <div class="explore-items fir">
-                    <img src="pic/singer14.jpg">
-                    <h3>Tatsuro</h3>
-                    <p>for pioneering that style of 
-                        Japanese adult-oriented 
-                        rock/soft rock music</p>
-                </div></a>
-            </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam quibusdam id molestiae saepe incidunt eaque? Tempora a soluta provident saepe labore et autem! Quisquam id aliquam laborum earum dolore?</p>
+                    <p>Mollitia provident libero vero doloribus, incidunt molestias explicabo rem dolorem est culpa, maxime nesciunt obcaecati voluptatem sequi ratione ad ipsam voluptas neque, itaque sint. Amet officiis pariatur ipsam maxime tenetur!</p> 
+                </div>   
         </div>
     </div>
-    <div class="quality-title">
-        <div class="quality-sub">
-            <h1>Best Music</h1>
-        </div>
-        <div class="quality-main">
-            <img src="pic/Quality1.png" alt="">
-        </div>
-    </div>
-    <div class="quality-container">       
-        <div class="quality-item">
-            <div class="quality-item-word">
-                <h3>Hi-Res </h3>
-                <span>(24-Bit / up to 192 kHz)</span>
-                <p>Authenticated and unbroken, with the <br>highest possible resolution
-                as flawless as it sounded in </p>
-                <div class="quality-item-pic ">
-                    <img src="pic/soundwave1.png" alt=""> 
-                </div> 
-            </div>
-            <div class="quality-item-word">
-                <h3>Normal  </h3>
-                <span>(16-Bit / 44,1 kHz)</span>
-                <p>CD quality corresponds to a specification which has a format equivalent to that of the</p>
-                <div class="quality-item-pic ">
-                    <img src="pic/soundwave2.png" alt=""> 
-                </div> 
-                </div>
-            <div class="quality-item-word">
-                <h3>Free Member </h3>
-                <span>(320 kbps)</span>
-                <p>The MP3 file is a lossy audio compression format.
-                It is a destructive format which greatly alters the sound quality</p>
-                <div class="quality-item-pic ">
-                    <img src="pic/soundwave3.png" alt=""> 
-                </div> 
-            </div>       
-        </div>
-    </div>
-    <div class="review"> 
-        <div class="review-content-title">
-                <h2>Music Article</h2>
-        </div>   
-        <div class="review-content">
-            <div class="review-title">
-                <img src="pic/Review1.png" alt="">
-            </div>
-            <div class="review-container"> 
-                <div class="review-items">
-                    <div class="review-word">
-                        <a href="review.html"><h3>We Love Music</h3>
+    <div class="section-title">
+        <h1>Music<br> Article</h1>   
+        <div class="section-title-word">
+            <span>build yourself a <br>
+            personal music list <br> 
+            share it <br>
+            and explore it.</span>
+        </div> 
+    </div>    
+    <section class="review"> 
+        <div class="review-container"> 
+            <div class="review-items">
+                <div class="review-blur"> 
+                    <div class="review-pic"> 
+                        <img class="imgmask" src="pic/singer16.jpg">  
+                        <a href="review.html">
+                        <h2>We Love Music</h2>
                         <p>I still remember when
                             I first heard the song 
-                        byPeterGabriell remem........</p></a>
-                    </div>
-                    <div class="review-pic">
-                       <img src="pic/singer16.jpg" width="300">
-                    </div>
+                        byPeterGabriell remem</p></a> 
+                    </div>     
                 </div>
-                <div class="review-items">
-                    <div class="review-word">
-                        <a href="review.html"><h3>We Love Music</h3>
+            </div>
+            <div class="review-items bg1">
+                <div class="review-blur"> 
+                    <div class="review-pic"> 
+                        <img class="imgmask" src="pic/album04.jpg">  
+                        <a href="review.html">
+                        <h2>We Love Music</h2>
+                        <p>I still remember when
+                        I first heard the song 
+                        byPeterGabriell remem</p></a> 
+                    </div>     
+                </div>
+            </div>
+            <div class="review-items bg2">
+                <div class="review-blur"> 
+                    <div class="review-pic"> 
+                        <img class="imgmask" src="pic/album07.jpg">  
+                        <a href="review.html">
+                        <h2>We Love Music</h2>
                         <p>I still remember when
                             I first heard the song 
-                        byPeterGabriell remem........</p></a>
-                    </div>
-                    <div class="review-pic">
-                       <img src="pic/singer133.jpg" width="300">
-                    </div>
-                </div>
-                <div class="review-items">
-                    <div class="review-word">
-                        <a href="review.html"><h3>We Love Music</h3>
-                        <p>I still remember when
-                            I first heard the song 
-                        byPeterGabriell remem........</p></a>
-                    </div>
-                    <div class="review-pic">
-                        <img src="pic/singer12.jpg" width="300">
-                    </div>
+                        byPeterGabriell remem</p></a> 
+                    </div>     
                 </div>
             </div>
         </div>
-    </div>
-<div class="footer">
-    <div class="footer-color">
-    <div class="footer-logobefore">
-        <div class="footer-content">
-            <h3>Join us</h3>
-            <ul>
-                <li><a href="Streaming.html">Plans</a></li>
-                <li><a href="Streaming.html">Hi-res</a></li>
-                <li><a href="Streaming.html">Questions</a></li>
-            </ul>
+    </section>  
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <h3>Join us</h3>
+                <ul>
+                    <li><a href="Streaming.html">Plans</a></li>
+                    <li><a href="Streaming.html">Hi-res</a></li>
+                    <li><a href="Streaming.html">Questions</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="Explore.html">top hits</a></li>
+                    <li><a href="Explore.html">Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Library</h3>
+                <ul>
+                    <li><a href="library.html">Favorite</a></li>
+                    <li><a href="library.html">Playlist</a></li>
+                    <li><a href="library.html">login</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">   
+                <h3>Review</h3>
+                <ul>
+                    <li><a href="review.html">recommend</a></li>
+                    <li><a href="review.html">Mostview</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-content">
-            <h3>Explore</h3>
-            <ul>
-                <li><a href="Explore.html">top hits</a></li>
-                <li><a href="Explore.html">Review</a></li>
-            </ul>
+        <div class="footer-copyright">
+            <div class="footer-logo">
+                <img src="pic/logo.png" alt="">
+            </div>
+            <p style="color:#695e55">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti error voluptatibus, </p>
         </div>
-    </div>
-    <div class="footer-logo">
-        <img src="pic/logo.png" alt="">
-        <span>Copy right Copy right Copy right Copy right</span>
-    </div>
-    <div class="footer-logoafter">
-        <div class="footer-content">
-            <h3>Library</h3>
-            <ul>
-                <li><a href="library.html">Favorite</a></li>
-                <li><a href="library.html">Playlist</a></li>
-                <li><a href="library.html">login</a></li>
-            </ul>
-        </div>
-        <div class="footer-content">
-            <h3>Review</h3>
-            <ul>
-                <li><a href="review.html">recommend</a></li>
-                <li><a href="review.html">Mostview</a></li>
-            </ul>
-    </div>
-    </div>
-</div>
+    </footer>
 </body>
 </html>

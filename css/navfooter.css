@@ -1,0 +1,121 @@
+.navbar{
+    background-color: #695e55;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 50;
+}
+.hb{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    position: relative;
+}
+.hb>span{
+    content:"";
+    position: absolute;
+    width: 36px;
+    height: 2px;
+    background-color: wheat;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display:block;
+}
+.hb span:first-child{
+    top: 11px;
+}
+.hb span:nth-child(2){
+    top: 0;
+    bottom: 0;
+}
+.hb span:last-child{
+    bottom: 11px;
+} 
+.logo{
+    width: 50px;
+    align-self: center;
+    margin-left: 10px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(180deg, #000000 0%, rgba(196, 196, 196, 0) 300%);;
+    backdrop-filter: blur(3px);
+    display: none;
+    justify-content: flex-end;
+    z-index: 50;
+}
+nav>ul{
+ border-bottom: #695e55 1px solid;
+}
+ nav>ul>li{ 
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: .3s;
+    }
+/* --------------------------------------------- */
+.footer{
+    margin: 20px;
+    padding: 20px;
+}  
+.footer-copyright{
+    border-top: #695e55 1px solid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.footer-logo{
+    width: 50px;
+    height: 50px;
+}
+.footer-container{
+    border-top: #695e55 1px solid;
+}
+@media screen and (min-width: 768px){
+    nav{
+        margin-right: 10px;
+    }
+    nav>ul{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 996px){
+    .hb{
+        display:none;
+    }
+    nav{
+        position: fixed;
+        top: -10px;
+        width: 100%;
+        background: none;
+        backdrop-filter:none;
+        display:flex;
+        justify-content: flex-end;
+        z-index: 50;
+    } 
+    nav>ul>li:hover{
+        background-color: #2f0521;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+    }  
+    .footer-copyright{
+        display: flex;
+        justify-content: space-between;
+        border-top: #695e55 1px solid;
+        text-align: start;
+    }
+    .footer-logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (min-width: 1200px){
+}

@@ -1,0 +1,130 @@
+h3{
+    border-bottom: 1px #bca6a9 solid;
+}
+.banner{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.line{
+    padding-left: 5px;
+    height: 1000px;
+    background-color: #aaa;
+}
+.music{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    position: relative;
+
+}
+.music-news{
+    width: 25%;
+    display: none;
+    padding-left: 10px;
+    border-left: #bca6a9 1px solid;  
+}
+.h3-sticky{
+    position: sticky;
+    top: 100px;
+}
+.music-slider{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+.music-overflow{
+    display: flex;
+    margin: 50px;
+    width: 100%;
+    position: relative;
+}
+.music-container{
+    display: flex;
+    flex-direction: column;
+}
+.music-slider-outer{
+    position: relative;
+}
+.music-item{
+    width: 50%;
+    padding-right: 20px;
+    position: relative;
+}
+.music-slider-outer>button{
+    display: inline-block;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top:40%;
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .music-news{
+        display: inline-block;
+    }
+    .music-slider{
+        /* flex-wrap: nowrap; */
+
+}
+@media screen and (min-width: 996px){
+    
+    .music{
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        position: relative;
+    
+    }
+    .music-news{
+        width: 20%;
+    }
+    .h3-sticky{
+        position: sticky;
+        top: 100px;
+    }
+    .music-slider{
+        display: flex;
+        width: 100%;
+        margin: 50px;
+       
+        position: relative;
+    
+    }
+    .music-container{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .music-item{
+        width: 50%;
+        padding-right: 20px;
+        position: relative;
+    }
+    .music-slider>button{
+        display: inline-block;
+        border: none;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+    }
+    
+    
+}
+@media screen and (min-width: 1200px){
+   
+}

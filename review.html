@@ -5,27 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Fever review</title>
-    <link rel="stylesheet" href="review.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="navfooter.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/All.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/review.css">
+    <script src="js/rwdmenu.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <div class="navtotal">
-            <div class="nav-span"><a href="Streaming.html">Join us</a></div>
-            <div class="nav-span"><a href="Explore.html">explore</a></div>
-            <div class="nav-logo">
-                <a href="index.html"><img src="pic/logo.png" alt="logo" width="100"></a>
-            </div>
-            <div class="nav-span"><a href="review.html">review</a></div>
-            <div class="nav-span"><a href="library.html">Library</a></div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="pic/logo.png" alt="">
         </div>
-        <div class="navicon-ig"><img src="pic/IGicon.png" alt="instagram" width="50"></div>
-        <div class="navicon-tweet"><img src="pic/TWEETicon.png" alt="tweeter" width="50"></div>
-        <div class="navicon-facebook"><img src="pic/facebookicon.png" alt="facebook" width="50"></div>
-        <div class="navicon-member"><img src="pic/membericon.png" alt="member" width="50"></div>
+        <div class="hb" id="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
+    <nav class="navlist" id="navlist" value="close">
+        <ul>
+            <li>Join us</li>
+            <li>Explore</li>
+            <li>Review</li>
+            <li>Library</li> 
+            <li>Log in</li> 
+        </ul>
+    </nav>   
 
+    
     <div class="artical">
         <h2>"UNDER <br> 
             PRESSURE<br> 
@@ -56,38 +64,45 @@
         <div class="card">    
             <div class="items posone">
                 <div class="items-title">
-                    <div class="items-pic">
-                        <span>ABC</span>
+                    <div class="items-pic">                       
                         <img src="pic/reviewpic3.jpg">
                     </div>
+                    <span>ABC</span>
                     <p>Lorem ipsum dolor sit amet consectetur </p>
                 </div>
             </div>
+
+
             <div class="items posone">
                 <div class="items-title"> 
-                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                    
                     <div class="items-pic">
-                        <span>ABC</span>
+                        
                         <img src="pic/reviewpic2.jpg">
-                    </div>   
+                    </div> 
+                    <span>ABC</span> 
+                    <p>Lorem ipsum dolor sit amet consectetur </p> 
                 </div>
             </div>
             <div class="items posone">
                 <div class="items-title">
                     <div class="items-pic">
-                        <span>ABC</span>
+                        
                         <img src="pic/reviewpic1.jpg">
                     </div>
+                    <span>ABC</span>
                     <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
             </div>
             <div class="items posone">
                 <div class="items-title">
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    
                     <div class="items-pic">
-                        <span>ABC</span>
-                        <img src="pic/reviewpic3.jpg">
-                    </div>         
+                        
+                        <img src="pic/reviewpic2.jpg">
+                    </div> 
+                    <span>ABC</span>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>        
                 </div>
             </div>
         </div>
@@ -95,51 +110,50 @@
             <div class="menuitems">
                 <img src="pic/album1_200x200.jpg"><br>
                 <span>Latest news</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non totam aspernatur, porro excepturi adipisci doloribus ipsam veritatis vel cumque illo, tempora laboriosam, modi nulla voluptate. Unde assumenda beatae facere nam!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non totam aspernatur, porro </p>
             </div>
         </div>
     </div>
 
-    <div class="footer">
-    <div class="footer-color">
-    <div class="footer-logobefore">
-        <div class="footer-content">
-            <h3>Join us</h3>
-            <ul>
-                <li><a href="Streaming.html">Plans</a></li>
-                <li><a href="Streaming.html">Hi-res</a></li>
-                <li><a href="Streaming.html">Questions</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <h3>Join us</h3>
+                <ul>
+                    <li><a href="Streaming.html">Plans</a></li>
+                    <li><a href="Streaming.html">Hi-res</a></li>
+                    <li><a href="Streaming.html">Questions</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="Explore.html">top hits</a></li>
+                    <li><a href="Explore.html">Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Library</h3>
+                <ul>
+                    <li><a href="library.html">Favorite</a></li>
+                    <li><a href="library.html">Playlist</a></li>
+                    <li><a href="library.html">login</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">   
+                <h3>Review</h3>
+                <ul>
+                    <li><a href="review.html">recommend</a></li>
+                    <li><a href="review.html">Mostview</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-content">
-            <h3>Explore</h3>
-            <ul>
-                <li><a href="Explore.html">top hits</a></li>
-                <li><a href="Explore.html">Review</a></li>
-            </ul>
+        <div class="footer-copyright">
+            <div class="footer-logo">
+                <img src="pic/logo.png" alt="">
+            </div>
+            <p style="color:#695e55">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti error voluptatibus, </p>
         </div>
-    </div>
-    <div class="footer-logo">
-        <img src="pic/logo.png" alt="">
-        <span>Copy right Copy right Copy right Copy right</span>
-    </div>
-    <div class="footer-logoafter">
-        <div class="footer-content">
-            <h3>Library</h3>
-            <ul>
-                <li><a href="library.html">Favorite</a></li>
-                <li><a href="library.html">Playlist</a></li>
-                <li><a href="library.html">login</a></li>
-            </ul>
-        </div>
-        <div class="footer-content">
-            <h3>Review</h3>
-            <ul>
-                <li><a href="review.html">recommend</a></li>
-                <li><a href="review.html">Mostview</a></li>
-            </ul>
-    </div>
-    </div>
-</div>
+    </footer>
 </body>
 </html>

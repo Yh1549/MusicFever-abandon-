@@ -1,0 +1,136 @@
+.section-title{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.wraper{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../pic/boombox2.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.intro-word{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.intro-pic{
+       display: none;
+   }
+
+.quality-item{
+    padding: 10px;
+    text-align: center;
+}
+.quality-item-pic{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.quality-item-pic>img{
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.noneInphone{
+    display:none;
+}
+.plans-item{
+    margin: 40px;
+    padding: 10px;
+    height : 500px;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.plans-item-title{
+    padding: 10px;
+}
+.plans-item-list{
+    background-color: aqua;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.plans-item-list ul{
+    list-style-type: '\2713';
+}
+.plans-item-list ul li{
+    padding-top: 15px;
+}
+.question-container{
+    padding: 50px;
+}
+/* ---------------------------------------------------------- */
+@media screen and (min-width: 768px){
+    .intro-pic{
+        display:block;
+    }
+    .wraper{
+    background-image: none;
+    }
+    .plans-container{
+        display: flex;
+        justify-content: center;
+    }
+    .question-container{
+        display: flex;
+        justify-content: center;
+    }
+    .question-item{
+        padding: 10px;
+    }
+}
+/* ---------------------------------------------------------- */
+ @media screen and (min-width: 996px){
+    .noneInphone{
+        display: flex;
+    }
+    .none{
+        display:none;
+    }
+    .wraper{  
+    }
+    .quality-content{ 
+        background-image: url(../pic/explorebg.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center; 
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;     
+    }
+    .quality-container{
+
+    }
+    .quality-item{
+        margin-top: 500px;
+        text-align: left;
+    } 
+    .quality-item h2{
+        border-bottom: 1px solid #bca6a9;
+    } 
+ }
+ /* ---------------------------------------------------------- */
+ @media screen and (min-width: 1200px){
+    
+ }
