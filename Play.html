@@ -9,25 +9,31 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/All.css">
     <link rel="stylesheet" href="css/navfooter.css">
-    <!-- <link rel="stylesheet" href="css/home1.css"> -->
+    <link rel="stylesheet" href="css/play.css"> <!-- -->
     <script src="js/rwdmenu.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <div class="navtotal">
-            <div class="nav-span"><a href="Streaming.html">Join us</a></div>
-            <div class="nav-span"><a href="Explore.html">explore</a></div>
-            <div class="nav-logo">
-                <a href="index.html"><img src="pic/logo.png" alt="logo" width="100"></a>
-            </div>
-            <div class="nav-span"><a href="review.html">review</a></div>
-            <div class="nav-span"><a href="library.html">Library</a></div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="pic/logo.png" alt="">
         </div>
-        <div class="navicon-ig"><img src="pic/IGicon.png" alt="instagram" width="50"></div>
-        <div class="navicon-tweet"><img src="pic/TWEETicon.png" alt="tweeter" width="50"></div>
-        <div class="navicon-facebook"><img src="pic/facebookicon.png" alt="facebook" width="50"></div>
-        <div class="navicon-member"><img src="pic/membericon.png" alt="member" width="50"></div>
-    </div> 
+        <div class="hb" id="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <nav class="navlist" id="navlist" value="close">
+        <ul>
+            <li>Join us</li>
+            <li>Explore</li>
+            <li>Review</li>
+            <li>Library</li> 
+            <li>Log in</li> 
+        </ul>
+    </nav>   
+
+
     <div class="music">
         <div class="musicbanner">  </div>
         <h2>With or without you</h2>
@@ -208,10 +214,10 @@
             </div>
         </div>
    </div>  
-   <div class="footer">
-    <div class="footer-color">
-    <div class="footer-logobefore">
-        <div class="footer-content">
+   
+   <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-item">
             <h3>Join us</h3>
             <ul>
                 <li><a href="Streaming.html">Plans</a></li>
@@ -219,22 +225,14 @@
                 <li><a href="Streaming.html">Questions</a></li>
             </ul>
         </div>
-        <div class="footer-content">
+        <div class="footer-item">
             <h3>Explore</h3>
             <ul>
                 <li><a href="Explore.html">top hits</a></li>
                 <li><a href="Explore.html">Review</a></li>
             </ul>
-
-
         </div>
-    </div>
-    <div class="footer-logo">
-        <img src="pic/logo.png" alt="">
-        <span>Copy right Copy right Copy right Copy right</span>
-    </div>
-    <div class="footer-logoafter">
-        <div class="footer-content">
+        <div class="footer-item">
             <h3>Library</h3>
             <ul>
                 <li><a href="library.html">Favorite</a></li>
@@ -242,15 +240,22 @@
                 <li><a href="library.html">login</a></li>
             </ul>
         </div>
-        <div class="footer-content">
+        <div class="footer-item">   
             <h3>Review</h3>
             <ul>
                 <li><a href="review.html">recommend</a></li>
                 <li><a href="review.html">Mostview</a></li>
             </ul>
+        </div>
     </div>
+    <div class="footer-copyright">
+        <div class="footer-logo">
+            <img src="pic/logo.png" alt="">
+        </div>
+        <p style="color:#695e55">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti error voluptatibus, </p>
     </div>
-</div>
+</footer>
+
    
 </body>
 </html>

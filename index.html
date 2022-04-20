@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/navfooter.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/rwdmenu.js"></script>
+    <script src="js/parallex.js"></script>
+    <script src="js/artist.js"></script>
 </head>
 <body > 
     <div class="navbar">
@@ -33,17 +35,24 @@
         </ul>
     </nav>         
     <div class="container" > 
-        <div class="containerbg">
-            <img class="img1" src="pic/city1.png" alt="City" >
-            <img class="img2" src="pic/citybg_rwd768.png" alt="City" >
-        </div>               
+        <div class="parapic">           
+            <div class="all" id="test" data-speed="60"></div>
+            <div class="all" id="test1" data-speed="40"></div>
+            <div class="all" id="test2-2" data-speed="30"></div>
+            <div class="all" id="test2" data-speed="25"></div>
+            <div class="all" id="test2-1" data-speed="20"></div>
+            <div class="all" id="test3" data-speed="20"></div>
+            <div class="all1" id="test4" data-speed="1"></div>   
+            <img id="bg" src="pic/citybg_rwd768.png" alt="City" >        
+        </div>
         <div class="container-word">                      
             <h1>FIND YOUR<br>
                 MUSIC</h1>
             <p>A streaming service for all music fans</p>                       
             <a href="Streaming.html"><div>Start Free Trial</div></a>
         </div>                
-    </div>            
+    </div>
+<div class="empty">          
     <div class="section-title">
             <h1>Explore<br>
             Your<br>
@@ -55,12 +64,15 @@
             and explore it.</span>
         </div>
     </div>
-    <section class="explore-content">
+<!-- ----------------------------------------------------------- -->
+<!-- -------------------------------------------------------------- -->  
+    <section class="explore-content">        
         <div class="explore-container ">                    
-            <div class="explore-items">                
-                <img src="pic/singer12.jpg">
+            <div class="explore-items">
+              <img src="pic/singer12.jpg">
+                
                 <a href="Explore.html">
-                <h2>HIP POP</h2>
+                <h3>HIP POP</h3>
                 <p>Hip Hop music also referred to
                     as hip hop or rap
                     music is a genre of musicHip Hop music also referred to
@@ -68,37 +80,62 @@
                 </a>
             </div>
         </div>
-        <div class="explore-container ">                  
+        <div class="explore-container">                  
             <div class="explore-items">                
                 <img src="pic/singer11.jpg"> 
-                <a href="Explore.html"> <h2>山下達郎</h2>
+                <a href="Explore.html"> <h3>山下達郎</h3>
                 <p>is a Japanese 
                     singer-songwriter and record
                     producer often referred to 
                     as the "King of City Pop"</p></a>
             </div>
         </div>
-        <div class="explore-container ">
+        <div class="explore-container">
                 <div class="explore-items">
-                <img src="pic/singer15.jpg">
-                <a href="Explore.html"> <h2>SynthWave</h2>
+                    <img src="pic/singer15.jpg"> 
+                <a href="Explore.html"> <h3>SynthWave</h3>
                 <p>Synthwave is an electronic 
                     music microgenre that is based
                     predominantly on the music 
                     associated with action</p></a>
             </div>
         </div>
-        <div class="explore-container ">
+        <div class="explore-container">
                 <div class="explore-items">
-                <img src="pic/singer14.jpg">
-                <a href="Explore.html"><h2>Tatsuro</h2>
+                    <img src="pic/singer14.jpg"> 
+                <a href="Explore.html"><h3>Tatsuro</h3>
                 <p>for pioneering that style of 
                     Japanese adult-oriented 
                     rock/soft rock music</p></a>
             </div>
         </div> 
+        <div class="explore-container ">                    
+            <div class="explore-items">
+              <img src="pic/singer12.jpg">
+                
+                <a href="Explore.html">
+                <h3>HIP POP</h3>
+                <p>Hip Hop music also referred to
+                    as hip hop or rap
+                    music is a genre of musicHip Hop music also referred to
+                    as hip hop or rap</p>                    
+                </a>
+            </div>
+        </div>
+        <div class="explore-container ">                    
+            <div class="explore-items">
+              <img src="pic/singer12.jpg">
+                
+                <a href="Explore.html">
+                <h3>HIP POP</h3>
+                <p>Hip Hop music also referred to
+                    as hip hop or rap
+                    music is a genre of musicHip Hop music also referred to
+                    as hip hop or rap</p>                    
+                </a>
+            </div>
+        </div>
     </section> 
-
     <div class="section-title">
         <h1>Music<br> Artist</h1>   
         <div class="section-title-word">
@@ -109,20 +146,29 @@
         </div> 
     </div>
     <div class="artist-content">
-        <div class="artist-item"> 
-                <!-- <div class="artist-word-bg"></div> -->     
+        <div class="artist-item">      
                 <div class="artist-pic">
-                      <img src="pic/singer7.jpg" alt="">
+                      <img id="curartist" src="pic/singer7.jpg" data-img="1">
                       <img id="polypic" src="pic/singer8.jpg" alt="">
                       <img id="polypic-2" src="pic/singer8.jpg" alt="">
                 </div>
-                <div class="artist-word">
+                <div class="artist-word" style="display:inline-block">
                     <h3>山下達郎</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam quibusdam id molestiae saepe incidunt eaque? Tempora a soluta provident saepe labore et autem! Quisquam id aliquam laborum earum dolore?</p>
                     <p>Mollitia provident libero vero doloribus, incidunt molestias explicabo rem dolorem est culpa, maxime nesciunt obcaecati voluptatem sequi ratione ad ipsam voluptas neque, itaque sint. Amet officiis pariatur ipsam maxime tenetur!</p> 
                 </div>   
+                <div class="artist-word"  style="display:none">
+                    <h3>U2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam quibusdam id molestiae saepe incidunt eaque? Tempora a soluta provident saepe labore et autem! Quisquam id aliquam laborum earum dolore?</p>
+                    <p>Mollitia provident libero vero doloribus, incidunt molestias explicabo rem dolorem est culpa, maxime nesciunt obcaecati voluptatem sequi ratione ad ipsam voluptas neque, itaque sint. Amet officiis pariatur ipsam maxime tenetur!</p> 
+                </div> 
         </div>
+        <button id="next"></button>
     </div>
+
+
+
+
     <div class="section-title">
         <h1>Music<br> Article</h1>   
         <div class="section-title-word">
@@ -134,44 +180,83 @@
     </div>    
     <section class="review"> 
         <div class="review-container"> 
-            <div class="review-items">
-                <div class="review-blur"> 
-                    <div class="review-pic"> 
-                        <img class="imgmask" src="pic/singer16.jpg">  
-                        <a href="review.html">
-                        <h2>We Love Music</h2>
-                        <p>I still remember when
-                            I first heard the song 
-                        byPeterGabriell remem</p></a> 
-                    </div>     
+            <div class="main-container">
+                <div class="main-container_tab tabimg1">
+                    <div class="main-container_tab_datetitle">
+                        <div class="main-container_tab_date">
+                           <span> Article Jun 3, 2021</span>
+                        </div>
+                        <h3 class="main-container_tab_title">Quisque id mi</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor">
+                        <div class="main-container_tab_photo" src=""></div>
+                        <p class="main-container_tab_author">Francesco Maretti</p>
+                    </div>
                 </div>
-            </div>
-            <div class="review-items bg1">
-                <div class="review-blur"> 
-                    <div class="review-pic"> 
-                        <img class="imgmask" src="pic/album04.jpg">  
-                        <a href="review.html">
-                        <h2>We Love Music</h2>
-                        <p>I still remember when
-                        I first heard the song 
-                        byPeterGabriell remem</p></a> 
-                    </div>     
+                <div class="main-container_tab tabimg2">
+                    <div class="main-container_tab_datetitle">
+                        <div class="main-container_tab_date">
+                             <span>Article Jun 4, 2021</span>
+                        </div>
+                        <h3 class="main-container_tab_title">Nullam quis ante</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor">
+                        <div class="main-container_tab_photo" src=""></div>
+                        <p class="main-container_tab_author">Francesco Maretti</p>
+                    </div>
                 </div>
-            </div>
-            <div class="review-items bg2">
-                <div class="review-blur"> 
-                    <div class="review-pic"> 
-                        <img class="imgmask" src="pic/album07.jpg">  
-                        <a href="review.html">
-                        <h2>We Love Music</h2>
-                        <p>I still remember when
-                            I first heard the song 
-                        byPeterGabriell remem</p></a> 
-                    </div>     
+                <div class="main-container_tab tabimg3">
+                    <div class="main-container_tab_datetitle">
+                        <div class="main-container_tab_date">
+                             <span>Article Jun 5, 2021</span>
+                        </div>
+                        <h3 class="main-container_tab_title">Donec sodales</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor">
+                        <div class="main-container_tab_photo" src=""></div>
+                        <p class="main-container_tab_author">Francesco Maretti</p>
+                    </div>
+                </div>
+                <div class="main-container_tab tabimg4">
+                    <div class="main-container_tab_datetitle">
+                        <div class="main-container_tab_date">
+                             <span>Article Jun 6, 2021</span>
+                        </div>
+                        <h3 class="main-container_tab_title">Quisque id mi</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor">
+                        <div class="main-container_tab_photo" src=""></div>
+                        <p class="main-container_tab_author">Francesco Maretti</p>
+                    </div>
+                </div>
+                <div class="main-container_tab tabimg5">
+                    <div class="main-container_tab_datetitle">
+                        <div class="main-container_tab_date">
+                             <span>Article Jun 7, 2021</span>
+                        </div>
+                        <h3 class="main-container_tab_title">Nullam quis ante</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor">
+                        <div class="main-container_tab_photo" src=""></div>
+                        <p class="main-container_tab_author">Francesco Maretti</p>
+                    </div>
+                </div>
+                <div class="main-container_tab tabimg1">
+                    <div class="main-container_tab_datetitle">
+                        <div class="main-container_tab_date">
+                             <span>Article Jun 8, 2021</span>
+                        </div>
+                        <h3 class="main-container_tab_title">Donec sodales</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor">
+                        <div class="main-container_tab_photo" src=""></div>
+                        <p class="main-container_tab_author">Francesco Maretti</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>  
+    </section> 
+</div>   
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-item">

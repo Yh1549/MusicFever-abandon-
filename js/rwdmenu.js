@@ -42,8 +42,6 @@
 //     }
 //     });
 // });
-
-
 $(function(){
     $('#hb').click(function(){
             $('.navlist').slideToggle(800) 

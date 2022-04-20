@@ -48,9 +48,6 @@ nav{
     justify-content: flex-end;
     z-index: 50;
 }
-nav>ul{
- border-bottom: #695e55 1px solid;
-}
  nav>ul>li{ 
     margin: 10px;
     padding-left: 10px;
