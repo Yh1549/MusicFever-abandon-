@@ -33,7 +33,7 @@
 .intro-pic{
     display: none;
    }
-
+/* ======================================== */
 .quality-item{
     padding: 10px;
     text-align: center;
@@ -61,6 +61,7 @@
 .noneInphone{
     display:none;
 }
+/* =========================================== */
 .plans-item{
     margin: 40px;
     padding: 10px;
@@ -113,8 +114,7 @@
     .none{
         display:none;
     }
-    .wraper{  
-    }
+/* ================================= */
     .quality-content{ 
         background-image: url(../pic/explorebg.png);
         background-size: contain;
@@ -125,20 +125,19 @@
         max-width: 1200px;
         height: 1500px;
         margin-right: auto;
-        margin-left: auto;     
+        margin-left: auto;
+        padding: 100px 0px;     
     }
     .quality-container{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    .quality-item{
-        
+    .quality-item{      
         text-align: left;
+        padding: 100px 0px;
     } 
-    .quality-item h2{
-        border-bottom: 1px solid #bca6a9;
-    } 
+}
  
  /* ---------------------------------------------------------- */
  @media screen and (min-width: 1200px){

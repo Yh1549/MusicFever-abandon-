@@ -52,9 +52,10 @@ nav{
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 5px;
     transition: .3s;
     }
-/* --------------------------------------------- */
+/* ====================================================*/
 .footer{
     margin: 20px;
     padding: 20px;
@@ -73,6 +74,15 @@ nav{
 .footer-container{
     border-top: #695e55 1px solid;
 }
+.footer-item>h3{
+   text-align: end;
+    
+}
+.footer-item>ul>li{
+    padding: 5px;
+    
+}
+
 @media screen and (min-width: 768px){
     nav{
         margin-right: 10px;

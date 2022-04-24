@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/navfooter.css">
     <link rel="stylesheet" href="css/Explore.css">
     <script src="js/rwdmenu.js"></script>
+    <script src="js/cursorExplore.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -25,27 +26,56 @@
     </div>
     <nav class="navlist" id="navlist" value="close">
         <ul>
-            <li>Join us</li>
-            <li>Explore</li>
-            <li>Review</li>
-            <li>Library</li> 
-            <li>Log in</li> 
+            <li><a href="Streaming.html">Join us</a> </li>
+            <li> <a href="Explore.html">Explore</a> </li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="library.html">Library</a> </li> 
+            <li><a href="">Log in</a> </li> 
         </ul>
-    </nav>    
-    
+    </nav>  
+<!-- ===================hover鼠標=================== -->
+    <div class="cursor" style="display:none"></div> 
+<!-- ===================選歌==================== -->
     <div class="banner">
-        <div class="banner-singer">
-            <span>U2</span>
+        <div class="singer-container">
+            <div class='mouseover hovertop' id="hovertop_1"></div>
+            <div class="singergroup">
+                <div class='singer' id="singer1">
+                    <p>U2</p>
+                </div>
+                <div class='singer' id="singer2">
+                    <p>Bonnie Tyler</p>
+                </div>
+                <div class='singer' id="singer3">
+                    <p>Prince</p>
+                </div>
+                <div class='singer' id="singer4">
+                    <p>Low Roar</p>
+                </div>
+            </div>
+            <div class="mouseover hoverbottom" id="hoverbottom_1"></div>
         </div>
         <div class="line"></div>
-        <div class="banner-music">
-            <span>With or without you</span>
+        <div class="song-container">
+            <div class="mouseover hovertop" id="hovertop_2"></div>
+            <div class="songgroup">
+                <div class='song' id="song1">
+                    <p>beatiful day</p>
+                </div>
+                <div class='song' id="song2">
+                    <p>all i want is you</p>
+                </div>
+                <div class='song' id="song3">
+                    <p>with or without you</p>
+                </div>
+                <div class='song' id="song4">
+                    <p >1234</p>
+                </div>
+            </div>
+            <div class="mouseover hoverbottom" id="hoverbottom_2"></div>
         </div>
     </div>
-
-
-
-    
+<!-- ================================================== -->
     <div class="music">
         <div class="music-container">
             <h3>TOP 50</h3>
@@ -143,141 +173,14 @@
              <button>next</button>                     
             </div>
         </div>
-        
-      <div class="music-news">
-        <div class="h3-sticky"> 
-            <p >Latest news from your favorite</p>
-            <!-- <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde voluptates eveniet quas ipsum aperiam quae, odio maiores ad explicabo expedita, delectus</p> -->
-        </div>
+        <!-- =================== -->
+        <div class="music-news">
+            <div class="h3-sticky"> 
+                <p >Latest news from your favorite</p>
+                <!-- <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde voluptates eveniet quas ipsum aperiam quae, odio maiores ad explicabo expedita, delectus</p> -->
+            </div>
         </div>
     </div>
-
-<!--     
-<div class="menu">
-    <div class="top-menu">
-        <div class="top-menu-title">
-            <h2>Top-Hits</h2>
-            <span>The most played tracks</span>
-        </div>
-        <div class="menu-container">
-            <ul>
-                <span>prev</span>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album0_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album2_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album3_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album4_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <span>next</span>
-            </ul>
-        </div>
-        <div class="top-menu-title">
-            <h2>New & hot</h2>
-            <span>The most played tracks</span>
-        </div>
-        <div class="menu-container">
-            <ul>
-                <span>prev</span>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album0_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album1_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album2_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album3_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <span>next</span>
-            </ul>
-        </div>
-        <div class="top-menu-title">
-            <h2>Chill</h2>
-            <span>The most played tracks</span>
-        </div>
-        <div class="menu-container">
-            <ul>
-                <span>prev</span>
-                <li>
-                    <a href="Play.html">
-                        <div class="menu-item">
-                        <img src="pic/album5_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album0_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album1_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="Play.html"><div class="menu-item">
-                        <img src="pic/album2_200x200.jpg">
-                        <span>singer</span>
-                        <span>song name</span>
-                    </div></a>
-                </li>
-                <span>next</span>
-            </ul>
-        </div>
-    </div> -->
-    <!-- <div class="menu-deco">
-        <div class="h3-sticky"> 
-            <h3 >Latest news from your favorite</h3>
-            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde voluptates eveniet quas ipsum aperiam quae, odio maiores ad explicabo expedita, delectus sunt optio earum magnam modi ea sapiente ratione perspiciatis.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloremque doloribus nostrum nam eveniet dolore fugiat hic sequi corrupti unde? Aliquam corrupti accusamus et voluptatem odio ipsum reprehenderit hic illo!</p>
-        </div>
-    </div>  -->
-<!-- </div> -->
 
 
 <footer class="footer">

@@ -1,6 +1,3 @@
-a{
-    text-decoration: none;
-}
 a>div{
     background-color: #f8a850;
     padding: 10px;
@@ -15,7 +12,7 @@ a>div{
     margin-right: auto;
     margin-left: auto;
 }
-.container{ 
+.para-container{ 
     position: relative;
 }
 .parapic{
@@ -23,22 +20,23 @@ a>div{
     justify-content: center;
 }
 #bg{
+    display: flex;
     width: 100%;
 }
-.container-word{
+.para-container-word{
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     position: relative;
     bottom: 80px;
 }
-.container-word>h1{
+.para-container-word>h1{
     letter-spacing: -2px;
 }
-.container-word>p{
-   font-size: 16px;
+.para-container-word>p{
+    font-size: 16px;
 }
-/* -------------------------------------------- */
+/* ====================================== */
 .section-title{
     display: flex;
     justify-content: center;
@@ -52,11 +50,11 @@ a>div{
 .section-title-word>span{
     font-size: 16px;   
 }
+/* ======================================= */
 .explore-content{
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	width: 80%;
 	height: auto;
 	padding:  80px;
 	margin:0 auto;
@@ -113,20 +111,28 @@ a>div{
     clip-path: polygon(0% 0%,100% 0%,100% 50%,0% 25%);
     transition: 1s;
 }
-.artist-item{
-
-}
 /* -------------------------------------- */
 .review-container{
     background-image: url(../pic/reviewbg.png);
 }
-
+#next{
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    border: none;
+    background-color: #2f0521;
+}
+.next-button{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
 /* --------------------------------- */
 .main-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	width: 80%;
+	/* width: 80%; */
 	height: auto;
 	padding:  80px;
 	margin:0 auto;
@@ -193,7 +199,6 @@ a>div{
 	height: 300px;
 	padding: 20px;
     margin: 10px;
-	/* background: linear-gradient(45deg, black 0%, black 100%); */
 	border-radius: 10px;
 	transition: all .5s ease-in-out;
 	display: flex;
@@ -203,16 +208,13 @@ a>div{
 	cursor: grab;
 }
 .main-container_tab {
-	/* transform: translateX(-80px); */
+	
 	transform-origin: 100%;
 	box-shadow: -5px 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 .main-container_tab:hover {
 	transform: rotate(5deg) translateX(-120px);
 }
-/* .main-container_tab:first-child:hover {
-	margin-right: 80px;
-} */
 .main-container_tab_date span {
 	opacity: .8;
 	font-weight: 500
@@ -228,12 +230,6 @@ a>div{
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
-}
-.main-container_tab_photo {
-	width: 50px;
-	height: 50px;
-	background-color: orange;
-	border-radius: 500px;
 }
 .main-container_tab_author {
 	margin-left: 20px;
@@ -253,7 +249,7 @@ a>div{
     .explore-container{
         min-width: 50%;
     }
-    .container-word{
+    .para-container-word{
         position: absolute;
         top: 25%;
         left: 45%;
@@ -272,15 +268,18 @@ a>div{
         margin-right: auto;
         margin-left: auto;
     }
-
-    
  }
  @media screen and (min-width: 996px){
+    .para-container{ 
+        display: flex;
+        position: relative;
+        background: linear-gradient(179.97deg, #F8A850 21.97%, #951B40 45.25%, #6F0F87 99.51%);
+    } 
     .parapic{
         width: 100%;
         height: 1000px;
     }
-    #test4{
+    #pic4{
         padding: 0;
         width: 100%;
         height: 1000px;
@@ -291,40 +290,51 @@ a>div{
         position: absolute ;
         bottom: 0;
      }
-     #test3{
+     #pic3{
         padding: 0;
         width: 100%;
         height: 1000px;
         background-image: url(../pic/parallex3.png);
-        background-size: cover;
+        background-size: contain;
         background-position: bottom;
-        background-repeat: repeat-x;
+        background-repeat: no-repeat;
         position: absolute ;
         bottom: 0;
      }
-     #test2-2{
+     #pic2-1{
         padding: 0;
         width: 100%;
         height: 1000px;
-        background-image: url(../pic/parallex4.png);
-        background-size: cover;
-        background-position: bottom;
-        background-repeat: repeat-x;
+        background-image: url(../pic/parallex2-1.png);
+        background-size: contain;
+        background-position:right;
+        background-repeat: repeat;
         position: absolute ;
         top: 0;
      }
-     #test2-1{
+     #pic2{
         padding: 0;
         width: 100%;
         height: 1000px;
         background-image: url(../pic/parallex6.png);
-        background-size: cover;
+        background-size: contain;
         background-position: bottom;
         background-repeat: repeat-x;
         position: absolute ;
         top: 0;
      }
-     #test1{
+     #pic2-2{
+        padding: 0;
+        width: 100%;
+        height: 1000px;
+        background-image: url(../pic/parallex4.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: repeat-x;
+        position: absolute ;
+        top: 0;
+     }
+     #pic1{
         padding: 0;
         width: 100%;
         height: 1000px;
@@ -335,14 +345,14 @@ a>div{
         position: absolute ;
         bottom: 0;
      }
-     #test{
+     #pic{
         padding: 0;
         width: 100%;
         height: 1000px;
-        background-image: url(../pic/sun.png);
+        background-image: url(../pic/parallex9.png);
         background-size: contain;
         background-position: bottom;
-        background-repeat: repeat-x;
+        background-repeat: no-repeat;
         position: absolute ;
         bottom: 0;
      }
@@ -350,10 +360,7 @@ a>div{
         width: 100%;
         display: flex;
     } 
-    .container{ 
-        background-color: rgb(113, 1, 187);
-        /* margin-top: 300px; */
-    } 
+   
     .container-word>h1{
        font-size: 60px;
     }  

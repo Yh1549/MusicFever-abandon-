@@ -5,13 +5,7 @@ h3{
     height: 1000px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-}
-.line{
-    padding-left: 5px;
-    height: 1000px;
-    background-color: #aaa;
+    align-items: center; 
 }
 .music{
     max-width: 1200px;
@@ -19,7 +13,6 @@ h3{
     margin-left: auto;
     display: flex;
     position: relative;
-
 }
 .music-news{
     width: 25%;
@@ -36,7 +29,6 @@ h3{
     justify-content: space-between;
     width: 100%;
     position: relative;
-    /* flex-wrap: wrap; */
 }
 .music-overflow{
     display: flex;
@@ -65,28 +57,18 @@ h3{
     right: 0;
     top:40%;
 }
-
-
-
-
-
 @media screen and (min-width: 768px){
     .music-news{
         display: inline-block;
     }
-    .music-slider{
-        /* flex-wrap: nowrap; */
-
 }
-@media screen and (min-width: 996px){
-    
+@media screen and (min-width: 996px){  
     .music{
         max-width: 1200px;
         margin-right: auto;
         margin-left: auto;
         display: flex;
         position: relative;
-    
     }
     .music-news{
         width: 20%;
@@ -98,10 +80,8 @@ h3{
     .music-slider{
         display: flex;
         width: 100%;
-        margin: 50px;
-       
+        margin: 50px;  
         position: relative;
-    
     }
     .music-container{
         display: flex;
@@ -122,9 +102,118 @@ h3{
         right: 0;
         bottom: 50%;
     }
-    
-    
+    .singer-container{
+        width: 49%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .line{
+        height: 1000px;
+        background-color: #aaa;
+        width: 1px;
+        margin:0 10px;
+    }
+    .song-container{
+        width: 49%;
+        height: 100%;
+    }
+    #hovertop_1,#hovertop_2{
+        height: 40%;
+        /* background-color: #aaa; */
+        border-bottom: 1px wheat solid;
+        cursor: none;
+    }
+    #hoverbottom_1,#hoverbottom_2{
+        border-top: 1px wheat solid;
+        height: 40%;
+        cursor: none;
+    }
+    .songgroup{
+        width: 400px;
+        height: 20%;
+        overflow: hidden;
+    }
+    .singergroup{
+        width: 400px;
+        height: 20%;
+        align-self: flex-end;
+        overflow: hidden;
+    }
+    .singer{
+        width: 400px;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        bottom: 200px;
+    }
+    .song{
+        width: 400px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        bottom: 200px;
+    }
+    .song p,.singer p{
+        font: 50px bold Arial, Helvetica, sans-serif;
+        margin: 0;
+        transition: 0.4s;
+    }
+    .cursor{ 
+        width: 100px;
+        height: 100px;
+        background-color: #bca6a9;
+        position: absolute;
+        pointer-events: none;  
+        /* animation: cursorAnim 1s infinite alternate; */
+    } 
+    .pointUp{
+        clip-path: polygon(50% 0%,100% 100%,0% 100%);
+        animation: cursorAnimUP 1s infinite alternate;
+    }
+    .pointDown{
+        clip-path: polygon(0% 0%,100% 0%,50% 100%);
+        animation: cursorAnimDOWN 1s infinite alternate;
+    }
+    .clickani{
+        animation: clickani .3s forwards;
+    }
 }
 @media screen and (min-width: 1200px){
    
+}
+@keyframes cursorAnimUP {
+    from {
+        transform: translate3d(0,0px,0px);
+        opacity: 0.8;
+    }
+    to {  
+        transform:  translate3d(0,-50px,0px); 
+    }
+}
+@keyframes cursorAnimDOWN {
+    from {
+        transform: translate3d(0,0px,0px); 
+        opacity: 0.8;
+    }
+    to {     
+        transform:  translate3d(0,50px,0px);
+    }
+}
+@keyframes clickani {
+   0% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+    50% {
+        transform: scale(1.5);
+        background-color: #f8a850;
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(1);
+    }
 }

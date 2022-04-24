@@ -47,4 +47,8 @@ li{
 }
 a{
     text-decoration: none;
+    color: wheat;
+}
+a:visited{
+    color: wheat;
 }
