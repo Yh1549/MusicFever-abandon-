@@ -262,6 +262,7 @@
  }
  @media screen and (min-width: 996px){
     #next{
+        display: inline-block;
         position: absolute;
         left: 75%;
         top: 45%;
