@@ -1,118 +1,63 @@
-h3{
-    border-bottom: 1px #bca6a9 solid;
+.Explore-title{
+    text-align: center;
+    border-bottom: wheat solid 1px;
 }
-.banner{
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+.songChange{ 
+    display: none;
 }
-.music{
-    max-width: 1200px;
+.song-container{
+    /* border-radius: 5px; */
+    margin: 10px;
+    padding: 10px;
+}
+.song-container-color1{
+    background: linear-gradient(359.33deg, #F8A850 -16.71%, #1067a5 28.57%, #A56EB9 120.71%);
+}
+.song-container-color2{
+    background: linear-gradient(359.33deg, #F8A850 -16.71%, #3D6D8F 28.57%, #B96E6E 120.71%);
+}
+.song-container-color3{
+    background: linear-gradient(359.33deg, #F8A850 -16.71%, #3D6D8F 28.57%, #A56EB9 120.71%);
+}
+.song-container-color4{
+    background: linear-gradient(359.33deg, #F8A850 -16.71%, #3D6D8F 28.57%, #B96E6E 120.71%);
+}
+.song-item{
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
-    position: relative;
+    text-align: center;
 }
-.music-news{
-    width: 25%;
+.singer-container{
     display: none;
-    padding-left: 10px;
-    border-left: #bca6a9 1px solid;  
 }
-.h3-sticky{
-    position: sticky;
-    top: 100px;
+.line{
+    height: 100%;
+    background-color: #f8a850;
+    width: 5px;
+    margin:0 10px;
 }
-.music-slider{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-}
-.music-overflow{
-    display: flex;
-    margin: 50px;
-    width: 100%;
-    position: relative;
-}
-.music-container{
-    display: flex;
-    flex-direction: column;
-}
-.music-slider-outer{
-    position: relative;
-}
-.music-item{
-    width: 50%;
-    padding-right: 20px;
-    position: relative;
-}
-.music-slider-outer>button{
-    display: inline-block;
-    border: none;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: 0;
-    top:40%;
-}
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px){ 
     .music-news{
         display: inline-block;
     }
 }
 @media screen and (min-width: 996px){  
-    .music{
-        max-width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
+    .song-rwd{
+        display:none;
+    }
+    .songChange{
+        height: 1000px;
         display: flex;
-        position: relative;
+        justify-content: center;
+        align-items: center; 
     }
-    .music-news{
-        width: 20%;
-    }
-    .h3-sticky{
-        position: sticky;
-        top: 100px;
-    }
-    .music-slider{
-        display: flex;
-        width: 100%;
-        margin: 50px;  
-        position: relative;
-    }
-    .music-container{
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-    .music-item{
-        width: 50%;
-        padding-right: 20px;
-        position: relative;
-    }
-    .music-slider>button{
-        display: inline-block;
-        border: none;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        right: 0;
-        bottom: 50%;
-    }
+
     .singer-container{
         width: 49%;
         height: 100%;
         display: flex;
         flex-direction: column;
-    }
-    .line{
-        height: 1000px;
-        background-color: #aaa;
-        width: 1px;
-        margin:0 10px;
     }
     .song-container{
         width: 49%;
@@ -179,7 +124,8 @@ h3{
         animation: cursorAnimDOWN 1s infinite alternate;
     }
     .clickani{
-        animation: clickani .3s forwards;
+       
+        animation: clickani .5s forwards;
     }
 }
 @media screen and (min-width: 1200px){
@@ -208,12 +154,18 @@ h3{
         transform: scale(1);
         opacity: 0.1;
     }
+    25%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
     50% {
-        transform: scale(1.5);
+        transform: scale(1.2);
         background-color: #f8a850;
         opacity: 0.8;
     }
     100%{
+        background-color: #bca6a9;
         transform: scale(1);
+        opacity: 1;
     }
 }

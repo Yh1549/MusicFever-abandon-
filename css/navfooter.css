@@ -39,6 +39,9 @@
     align-self: center;
     margin-left: 10px;
 }
+.logo>a{
+    z-index: 51;
+}
 nav{
     position: fixed;
     width: 100%;
@@ -74,10 +77,7 @@ nav{
 .footer-container{
     border-top: #695e55 1px solid;
 }
-.footer-item>h3{
-   text-align: end;
-    
-}
+
 .footer-item>ul>li{
     padding: 5px;
     
@@ -99,12 +99,12 @@ nav{
     nav{
         position: fixed;
         top: -10px;
-        width: 100%;
+        right: 0%;
+        width: 50%;
         background: none;
         backdrop-filter:none;
         display:flex;
         justify-content: flex-end;
-        z-index: 50;
     } 
     nav>ul>li:hover{
         background-color: #2f0521;

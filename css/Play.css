@@ -1,155 +1,94 @@
+.music{
+    text-align: center;
+}
+.play{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px 0px;
+}
+.playbar{
+    display:flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.playbutton{
+    width: 50px;
+    height: 50px;
+    background-color: #f8a850;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+.play-prev{
+    width: 50px;
+    height: 50px;
+    background-color: #f8a850;
+    clip-path: polygon(40% 50%, 100% 0%, 100% 10%, 50% 50%, 100% 90%,  100% 100%);
+}
+.play-next{   
+    width: 50px;
+    height: 50px;
+    background-color: #f8a850;
+    clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 0% 90%, 40% 50%, 0% 10%);
+}
+.music span{
+    text-align: center;
+}
+.musiccontent{
+    padding: 10px 20px;
+}
+.playlist ol{
+    list-style-type: none;
+	padding: 20px 36px;
+	font-weight: 500;
+    background-color: #695e55;
+    margin: 20px;
+    border-radius: 5px;
+}
+.playlist>ol>li{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: wheat solid 1px;
 
-body{
-    background-color: #2f0521;
 }
-span{
-    color: wheat;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+
+@media screen and (min-width: 768px){
+
 }
-h2{
-    color: wheat;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-}
-p{
-    color: wheat;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-}
-li{
-    list-style: none;
-}
+@media screen and (min-width: 996px){
 .music{
     display: flex;
     flex-direction: column;
     width: 90%;
     margin-right: auto;
-    margin-left: auto;
-    
-    position: relative;
-    
+    margin-left: auto; 
+    position: relative;    
 }
-.musicbanner{
-    width: 100%;
-    padding-bottom: 30%;
-    background-image: url(pic/album00.jpg);
-    filter: blur(5px);
-    background-size: cover;
-    background-position: center;
-    background-repeat:no-repeat;
-    position: relative;
-    
-}
-
-.music>h2 {
-    display: inline-block;
-    background-color: #323131;
-    padding: 10px;
-    margin: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.music>span {
-    font-size: 30px;
-    display: inline-block;
-    background-color: #323131;
-    padding: 10px;
-    margin: 20px;
-    position: absolute;
-    top: 15%;
-    left: 0;
-}
-.musictotal{
-    display: flex;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.music-container{
-    width: 80%;
-}
-.addplay{
-    width: 20%;
-    border-left: #f8a850 solid 1px;
-    margin-left: 10px;
-    padding-left: 50px;
-}
-.addplay-item{
-    display: flex;
-    padding: 10px;
-}
-.addplay-item>span{
-    font-size: 20px;
-}
-.addplay>h3{
-    color: wheat;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    border-bottom: #f8a850 1px solid;
+.playsong>p{
+    font-size: 60px;
 }
 .musiccontent{
-    display: flex;
-}
-.playbar{
-    margin-top: 20px;
-    border-bottom: #bca6a9 solid 5px;
-}
-.play{
+    text-align: center;
     padding: 20px;
 }
-.info{
-    margin-top: 25px;
-}
-.info>span{
-    margin: 10px;
-    font-size: 25px;
-    font-weight: 700;
-}
-.playlist>h2{
-    text-align: center;
-}
-.playmenu{
-    /* width: 60%; */
-    margin-left: auto; 
+.musiccontent>p{
+    max-width: 800px; 
     margin-right: auto;
+    margin-left: auto;
 }
-.play-menu-title>span{
-    font-size: 20px;
+.playlist{
+   display: flex;
+   justify-content: center;
 }
-    .menu-container{
-        align-content: center;
-        border-bottom: #bca6a9 solid 1px;
-    } 
-    .menu-container>ul{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 15px;
-        align-content: center;
-    } 
-    .menu-container>ul>span{
-       color: #f8a850;
-     align-self: center
-    } 
-    .menu-container>ul>li{
-       margin-right: 20px;
-       margin-left: 20px;
-       }
-.menu-item{
-    display: flex;
-    flex-direction: column;
+ol{
+    width: 80%;
 }
-.menu-item>span{
-    display: inline-block;
-    align-self: flex-start;
-    font-size: 16px;
-    font-weight: 700; 
+.play{
+    width: 30%;
+    padding: 20px;
 }
-ul>span{
-    font-size: 25px;
+}
+@media screen and (min-width: 1200px){
+   
 }

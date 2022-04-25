@@ -1,109 +1,142 @@
-body{
-    background-color: #2f0521;
-    top: 107px;
-    
+.library-title{
+    text-align: center;
+    border-bottom: wheat solid 1px;
 }
-.playlist-item>ul{
-    display: flex;
-    list-style: none;
-}
-
-.playlist-item>ul>li{
-    padding: 40px 20px;
-    position: relative;
-}
-h2{
-    color: wheat;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-span{
-    color: wheat;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-.banner{
-    padding-bottom: 20%;
-    background-image: url(pic/librarybg.JPG);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: center;
-    filter: blur(2px);   
-}
-.bannerperson{
-    position: relative;
-    padding: 10px;
-}
-.bannerperson>span{
-    background-color: #323131;
-    color: #f8a850;
-    font-size: 50px;
-    position: absolute; 
-    left: 20%; 
-    top: -1000%; 
-}
-.playlist{
-    display: flex;
-    max-width: 1200px;
-    justify-content: space-around;
+.library{
+    width: 85%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
-    border-top: #f8a850 solid 5px;
-
-}
-.playlist-item{
-    border-bottom: wheat solid 1px;
-    padding-top: 10px;
-}
-.playlist-item>ul>li{
-    align-self: center;
-}
-.playlist-item>ul>li>span{
-    color: #f8a850;
-}
-.playlist-container{
-    padding: 10px;
-}
-.playlist-menu{
-    border-left: #f8a850 solid 5px;
-    width: 20%;
-}
-.menuspan{
     display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 100px;
 }
-.menuspan>span{
-   border: wheat solid 1px;
-   margin: 5px;
-   text-align: center;
+.library-menu{
+    display: none;
 }
-.musictitle{
+.library-menu>ol>li>span{
+    font-size: 16px;
+}
+.library-music{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.music-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0px;
+}
+.music-info{
+    height: 350px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
     position: absolute;
-    font-weight: 700;
-    left: 30%;
-    top: 50%;
-    opacity: .5;
-    transition: .5s;
-}
-.musicinfo{
-    position: absolute;
+    top: 0;
     left: 0;
-    top: 100%;
+    z-index: 5;
+}
+.playbutton{
+    width: 50px;
+    height: 50px;
+    background-color: #f8a850;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    z-index: 5;
+    transition: .5s;
     opacity: 0;
-    transition: .3s; 
-    font-size: 15px;
-    text-align: center;
 }
-.hover:hover ~ .musictitle {
+.music-info h2{
+    transition: .5s;
+    opacity: 0;
+}
+.music-info-song{
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    transition: .5s;
+    opacity: 0;
+}
+.music-card{
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    box-shadow: 0 70px 63px -60px #000000;
+    position: relative;
+}
+.card0{
+    background: url('../pic/album03.jpg') center center no-repeat;
+    background-size: 300px;
+}
+.music-info:hover +.card0{
+    background: url('../pic/album03.jpg') left center no-repeat;
+    background-size: 600px;
+    filter: blur(3px);
+}
+.card1{
+    background: url('../pic/singer10.jpg') center center no-repeat;
+    background-size: 300px;
+}
+.music-info:hover +.card1{
+    background: url('../pic/singer10.jpg') left center no-repeat;
+    background-size: 600px;
+    filter: blur(3px);
+}
+.card2{
+    background: url('../pic/album07.jpg') center center no-repeat;
+    background-size: 300px;
+}
+.music-info:hover +.card2{
+    background: url('../pic/album07.jpg') left center no-repeat;
+    background-size: 600px;
+    filter: blur(3px);
+}
+.card3{
+    background: url('../pic/album04.jpg') center center no-repeat;
+    background-size: 300px;
+}
+.music-info:hover +.card3{
+    background: url('../pic/album04.jpg') left center no-repeat;
+    background-size: 600px;
+    filter: blur(3px);
+}
+.music-info:hover {
+    border: wheat solid 1px;
+}
+.music-info:hover  h2{
     opacity: 1;
 }
-.hover:hover ~ .musicinfo {
+.music-info:hover  div{
     opacity: 1;
-    top: 75%;
 }
+@media screen and (min-width: 768px){
+    .music-item{
+        width: 75%; 
+    }
+}
+@media screen and (min-width: 996px){
+   .library-menu{
+       display: inline-block;
+       width: 20%;
+   }
+   .library-music{
+       width: 80%;
+   }
+    .music-item{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .music-item{
+        width: 30%; 
+    }
+}
+  

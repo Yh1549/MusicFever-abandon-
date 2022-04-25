@@ -9,17 +9,13 @@
             // console.log(data);
             // console.log(ypos);
             // console.log(y);
-            
             }  
             let x = new Date();  
             // console.log(x.getTime());   
         }
         function fade(){
-            let y = window.scrollY;
-            
-            
-        }    
-        
+            let y = window.scrollY;   
+        }          
     window.addEventListener('scroll', con, false);
     window.addEventListener('scroll', fade, false);
   

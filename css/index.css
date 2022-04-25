@@ -1,4 +1,4 @@
-a>div{
+.trial{
     background-color: #f8a850;
     padding: 10px;
     border-radius: 6px;
@@ -115,24 +115,12 @@ a>div{
 .review-container{
     background-image: url(../pic/reviewbg.png);
 }
-#next{
-    position: absolute;
-    left: 75%;
-    top: 40%;
-    border: none;
-    background-color: #2f0521;
-}
-.next-button{
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-}
+
 /* --------------------------------- */
 .main-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	/* width: 80%; */
 	height: auto;
 	padding:  80px;
 	margin:0 auto;
@@ -195,7 +183,7 @@ a>div{
     background-repeat: no-repeat;
 }
 .main-container_tab {
-   min-width: 100%;
+    width: 100%;
 	height: 300px;
 	padding: 20px;
     margin: 10px;
@@ -219,7 +207,7 @@ a>div{
 	opacity: .8;
 	font-weight: 500
 }
-.main-container_tab_title {
+.main-container_tab_title>a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	color: orange;
@@ -236,6 +224,9 @@ a>div{
 	font-family: 'Roboto Mono', monospace;
 	color: white;
 	font-size: .8rem
+}
+#next{
+    display: none;
 }
 
 /* ----------------------------------------------------------- */
@@ -270,6 +261,24 @@ a>div{
     }
  }
  @media screen and (min-width: 996px){
+    #next{
+        position: absolute;
+        left: 75%;
+        top: 45%;
+        border: none;
+        background-color: #2f0521;
+    }
+    .next-button{
+        width: 100px;
+        height: 100px;
+        background-color: #f8a850;
+        cursor: pointer;
+        clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+        transition: 0.5s;
+    }
+    .next-button:hover{
+       transform: scale(1.2);
+    }
     .para-container{ 
         display: flex;
         position: relative;
