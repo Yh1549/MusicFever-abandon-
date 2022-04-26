@@ -5,11 +5,11 @@
 .songChange{ 
     display: none;
 }
-.song-container{
-    /* border-radius: 5px; */
+/* .song-container{
+     border-radius: 5px;
     margin: 10px;
-    padding: 10px;
-}
+    padding: 10px; 
+}*/
 .song-container-color1{
     background: linear-gradient(359.33deg, #F8A850 -16.71%, #1067a5 28.57%, #A56EB9 120.71%);
 }
